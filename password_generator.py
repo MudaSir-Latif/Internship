@@ -12,5 +12,5 @@ def password_generator(len):
     return password
 
 
-len=int(input("Enter the length of the password: "))
+len=int(input("Enter the length of the password : "))
 print(password_generator(len))

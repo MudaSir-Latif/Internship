@@ -22,25 +22,24 @@ class todo_list:
 
 
 while True: 
-    print("Select:-\n1) create \n2) update \n3) view \n4) terminate")
-    take=int(input('Enter the number according to your choice: '))
-    if take==1:
+    print("Select:-\n1) create \n2) update \n3) view \n4) exit")
+    u_input=int(input('Enter the number according to your choice: '))
+    if u_input==1:
             name=input("Enter the name for the todo list: ")
             my_list=todo_list(name)
             my_list.add()              
 
-    elif take==2:
+    elif u_input==2:
             print("Add task to todo list: ")
             my_list.update()
 
 
-    elif take==3 :
+    elif u_input==3 :
             print()
             my_list.view()
             print()
 
-    elif take==4:
-        print("Program terminates!!!")
+    elif u_input==4:
         break
 
     else:
