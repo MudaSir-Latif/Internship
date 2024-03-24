@@ -4,14 +4,14 @@ def game():
     user_score=0
     computer_score=0
     while True:
-        choice=int(input("Enter your choice:\n1)play again\n2)view score\n3)terminate\n: "))
+        choice=int(input("Enter your choice:\n1)play again\n2)view score\n3)terminate\n "))
 
         if choice==1:   
-            uinput=input("Enter your choice rock,papper or scissors: ")
+            uinput=input("Enter your choice rock, papper or scissors: ")
             lst=["rock","papper","scissors"]
             cinput=random.choice(lst)
 
-            if cinput=="rock" and uinput=='rock' or cinput=="papper" and uinput=='papper' or cinput=="scissors" and uinput=='scissors':
+            if cinput==uinput:
                 print()
                 print("It's a draw!!!\n","User's input: ",uinput,"\nComputer's input: ",cinput, sep="")
                 print()
@@ -24,7 +24,7 @@ def game():
                 print()
                 user_score+=2
 
-            elif uinput=="papper" and cinput=='scissors' or uinput=="papper" and cinput=='scissors' or uinput=="scissors" and cinput=='rock':
+            elif uinput=="rock" and cinput=='papper' or uinput=="papper" and cinput=='scissors' or uinput=="scissors" and cinput=='rock':
                 print()
                 print("Computer's win!!!\n","User's input: ",uinput,"\nComputer's input: ",cinput, sep="")
                 print()
