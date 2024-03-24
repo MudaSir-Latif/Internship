@@ -1,7 +1,7 @@
 # Internship
 <br>
 These are the four programms I have built using Python: 
-<br>1) Calculator
+<br>1) calculator
 <br>
 2) password_generator
 <br>
